@@ -1,0 +1,6 @@
+{
+  "token": "<Discord bot token>",
+  "clientId": "<Discord client id>",
+  "guildId": "<Server/Guild Id>",
+  "githubToken": "<Github Personal access token>"
+}
