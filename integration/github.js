@@ -1,5 +1,5 @@
 const { Octokit } = require("@octokit/core");
-const { githubToken } = require("../config.json");
+const { githubToken, githubUsername } = require("../config.json");
 
 const ok = new Octokit({
   auth: githubToken,
@@ -8,7 +8,7 @@ const ok = new Octokit({
 const createIssue = async (repo, title, description) => {
   try {
     const res = await ok.request("POST /repos/{owner}/{repo}/issues", {
-      owner: "devssio",
+      owner: githubUsername,
       repo,
       title,
       body: description,

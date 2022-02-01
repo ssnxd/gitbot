@@ -3,4 +3,5 @@
   "clientId": "<Discord client id>",
   "guildId": "<Server/Guild Id>",
   "githubToken": "<Github Personal access token>"
+  "githubUsername": "<Github org or username>"
 }
