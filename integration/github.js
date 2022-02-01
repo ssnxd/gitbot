@@ -14,28 +14,28 @@ const createIssue = async (repo, title, description) => {
       body: description,
     });
 
-    const url = res.data.html_url
-    const id = res.data.number
+    const url = res.data.html_url;
+    const id = res.data.number;
 
-		return {
-			success: true,
+    return {
+      success: true,
       data: {
         title,
         url,
         description,
-        id
-      }
-		}
+        id,
+      },
+    };
   } catch (e) {
     /* handle error */
-    console.log(e)
-		return {
-			success: false,
-			data: null
-		}
+    console.log(e);
+    return {
+      success: false,
+      data: null,
+    };
   }
 };
 
 module.exports = {
-  createIssue
-}
+  createIssue,
+};

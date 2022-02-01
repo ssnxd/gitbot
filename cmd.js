@@ -22,7 +22,7 @@ const commands = [
         .setDescription("Title for the issue")
         .setRequired(true)
     )
-		.addStringOption((option) =>
+    .addStringOption((option) =>
       option
         .setName("description")
         .setDescription("Describe what's wrong")
